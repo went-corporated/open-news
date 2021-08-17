@@ -1,0 +1,3 @@
+setTimeout(() => { document.getElementById('sound_equal_ok').style.backgroundColor = 'white' }, 2000);
+
+transform: rotateY(-35deg) rotateX(15deg);

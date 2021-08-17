@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centre d'informations · Animate DIV</title>
+    <!-- Image -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../favico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../favico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../favico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../favico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../favico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../favico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../favico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../favico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../favico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../favico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favico/favicon-16x16.png">
+    <!-- endsection -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/notifs.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="ui_controller" class="ui-controller">
+
+        <div id="ui_standard" class="ui-standard">
+            
+            <div id="title_bar" class="title-bar"><p><a href="../index.html">Animate DIV</a></p></div>
+
+            <div id="tools_bar" class="tools-bar"><button id="toggle_changelog_btn" onclick="changelogToggle();">Changelog</button></div>
+
+            <div id="changelog" class="changelog">
+                <p id="changelog_title" class="changelog-title">Change log</p>
+                <div id="changelog_maj_list" class="changelog-maj-list">
+                    <div id="changelog_maj_list_item1" class="changelog-maj-list-item">
+                        <p>[V1.0.0.0] 2021-17-11</p>
+                        <ul>
+                            <li>- Changelog</li>
+                            <li>- Tags (inutiles pour le moment)</li>
+                            <li>- PWA (installation et écran hors ligne)</li>
+                        </ul>
+                    </div>
+                </div>
+                <button id="btn_close_changelog" onclick="changelogToggle();">Fermer le change log</button>
+            </div>
+            
+            <div id="content" class="content">
+
+                <div id="news_1" class="news">
+                    <p class="news-title">Le commencement.</p>
+                    <p class="news-date">16 août 2021</p>
+                    <p class="news-tags">
+                        <a href="./index.html">#animate-div</a>
+                        <a href="./index.html">#darktheme</a>
+                        <a href="#lecture_instantanée">#lecture-instantanée</a>
+                        <a href="./index.html">#replit</a>
+                        <a href="./index.html">#invention</a>
+                        <a href="./index.html">#bêta</a>
+                    </p>
+                    <p class="news-text">
+                        Bienvenue sur Animate DIV ! La V1 sort dans bientôt ! Demandez un post
+                        sur Discord.
+                        <br>
+                        Hep ! restez ici ! On va voir ce qu'est Animate DIV :
+
+                        <br><br><b id="lecture_instantanée">#lecture-instantanée</b><br>
+                        L'innovation qu'apporte Animate, c'est de pouvoir lire du contenu
+                        sur une seul et même page, sans avoir besoin de se connecter et sans
+                        aucune publicité.
+
+                    </p>
+                </div>
+
+            </div>
+
+            <div id="notif" class="notif">
+                <p>Téléchargez Selectiony pour Chrome</p>
+                <div class="notif-underlay"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

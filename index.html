@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta property="og:title" content="Bonjour, un café s'il-vous-plaît.">
+    <meta property="og:url" content="https://ekonnect.github.io/animate-div/" />
+    <meta property="og:description" content="Bienvenue au café Animate DIV. Profitez de vos merveilleuses vacances avec notre centre d'informations téléchargeable ! Par kct.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Animate DIV - Centre d'informations">
+    <meta name="author" content="eKonnect">
+    <meta name="description" content="Nonsense!">
+    <!-- Image -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./favico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./favico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favico/favicon-16x16.png">
+    <link rel="manifest" href="./favico/manifest.json">
+    <meta name="msapplication-TileColor" content="rgb(31, 31, 31)">
+    <meta name="msapplication-TileImage" content="./favico/ms-icon-144x144.png">
+    <meta name="theme-color" content="rgb(31, 31, 31)">
+    <!-- endsection -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate DIV</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="manifest" href="./favicon_io (1)/site.webmanifest">
+    <script>
+        window.addEventListener("load", () => {
+            if ("serviceWorker" in navigator) {
+                navigator.serviceWorker.register('./sw1.js');
+            }
+        })
+    </script>
+</head>
+<body>
+
+    <div id="canvas">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+        <div id="four"></div>
+        <div id="five"></div>
+        <div id="six"></div>
+    </div>
+
+    <div id="cornering">
+        <div id="corner_btn" onclick="rotateNinety();"><p>Rotate</p></div>
+        <div id="corner_btn1" onclick="location.href = './v1/index.html';"><p>Première version</p></div>
+    </div>
+
+    <div id="about">
+        <p id="about_title">Animate &lt;<span id="about_title_span"></span>&gt;</p>
+        <p class="about-text">16 août : PHP arrive !</p>
+        <p class="about-text">14 août : C'est (presque) responsive !</p>
+        <p class="about-text">12 août : Lorem ipsum, ébauche du 1er post !</p>
+        <p class="about-text">8 août : Let's get started !</p>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="./about.js"></script>
+</body>
+</html>

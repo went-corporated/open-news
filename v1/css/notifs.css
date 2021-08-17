@@ -75,3 +75,10 @@
         left: 100%;
     }
 }
+
+@media screen and (max-width: 500px){
+    .notif{
+        width: calc(95% - 1px);
+        left: 2.5%;
+    }
+}

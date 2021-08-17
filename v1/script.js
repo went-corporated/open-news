@@ -33,5 +33,5 @@ function toggleNotif(){
 }
 
 document.getElementById('notif').onclick = function(){
-    window.open('https://github.com/went-lab/animate-div');
+    window.open('https://github.com/went-lab/selected');
 }

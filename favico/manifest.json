@@ -1,5 +1,7 @@
 {
  "name": "Animate DIV",
+ "display": "fullscreen",
+ "start_url": "./",
  "icons": [
   {
    "src": "\/android-icon-36x36.png",

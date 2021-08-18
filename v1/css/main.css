@@ -237,13 +237,20 @@ body{
 @media screen and (max-width: 600px){
     .footer{
         grid-template-areas: 
-        "credits"
-        "links" !important;
-        height: max-content !important;
-        padding-bottom: 35px !important;
+        "credits credits credits"
+        "first-links first-links first-links"
+        "second-links second-links second-links" !important;
+        height: 468px !important;
+        padding-bottom: 0px !important;
     }
     .footer>ul{
         margin-left: 10px !important;
+    }
+    .footer-first-ul{
+        margin-top: -17px !important;
+    }
+    .footer-second-ul{
+        margin-top: -30px !important;
     }
 }
 
@@ -263,18 +270,20 @@ body{
     position: relative;
     bottom: 0; left: 0;
     width: calc(100% + 100px);
-    height: 150px;
     margin: 0; padding: 0;
+    height: 210px;
     margin-left: -50px;
     margin-bottom: -75px;
     margin-top: 50px;
     background-color: rgb(22, 22, 22);
     border-top: 2px solid rgb(90, 90, 90);
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas: 
-        "credits links";
+        "credits first-links second-links"
+        "credits first-links second-links"
+        "credits first-links second-links";
     overflow: hidden !important;
 }
 
@@ -296,8 +305,21 @@ body{
     margin: 0;
 }
 
-.footer>ul{
-    grid-area: links;
+.footer>ul>p{
+    margin-top: 5px;
+}
+
+.footer-first-ul{
+    grid-area: first-links;
+    margin: 0;
+    margin-top: 30px;
+    height: max-content;
+    font-size: 18px;
+    overflow: visible !important;
+}
+
+.footer-second-ul{
+    grid-area: second-links;
     margin: 0;
     margin-top: 30px;
     height: max-content;

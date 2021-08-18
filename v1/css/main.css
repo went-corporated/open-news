@@ -239,7 +239,8 @@ body{
         grid-template-areas: 
         "credits"
         "links" !important;
-        height: 215px !important;
+        height: max-content !important;
+        padding-bottom: 35px !important;
     }
     .footer>ul{
         margin-left: 10px !important;
@@ -299,5 +300,7 @@ body{
     grid-area: links;
     margin: 0;
     margin-top: 30px;
+    height: max-content;
     font-size: 18px;
+    overflow: visible !important;
 }

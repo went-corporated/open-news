@@ -5,6 +5,7 @@
   font-family: 'Barlow', sans-serif;
   user-select: none;
   overflow-y: auto;
+  overflow-x: hidden !important;
   scroll-behavior: smooth;
   box-sizing: border-box;
 }
@@ -51,9 +52,9 @@ body{
     width: max-content;
     height: 60px;
     background-color: rgb(59, 59, 59);
-    border: 2px solid blueviolet;
+    /* border: 2px solid blueviolet; */
     top: 25px; right: 25px;
-    /* border-radius: 35px; */
+    border-radius: 35px;
     cursor: pointer;
     display: flex;
     justify-content: center; align-items: center;
@@ -63,16 +64,12 @@ body{
     font-size: 25px;
     font-weight: 600;
     box-shadow: none;
-    transition: .15s;
     overflow: hidden !important;
     overflow-y: hidden !important;
-    box-shadow: -5px 5px 0 0 blueviolet;
-}
-#corner_btn1:hover{
-    box-shadow: -10px 10px 0 0 blueviolet;
+    transition: .1s;
 }
 #corner_btn1:active{
-    box-shadow: 0 0 0 0 blueviolet;
+    transform: scale(.9);
 }
 
 #corner_btn1>p{
@@ -84,11 +81,12 @@ body{
 #about{
     position: absolute;
     bottom: 0; left: 0;
-    width: 100%;
+    width: calc(100% + 1px);
     height: 50%;
     margin: 0; padding: 0;
     background-color: rgb(22, 22, 22);
-    overflow-y: auto;
+    overflow-y: scroll;
+    overflow-x: hidden !important;
     border-top: 10px solid blueviolet;
     padding-left: 25px; padding-right: 25px;
 }

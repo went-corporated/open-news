@@ -72,6 +72,10 @@ body{
     text-align: center;
 }
 
+.title-bar>p>a{
+    font-family: 'Barlow Medium';
+}
+
 .lateral-bar{
     position: fixed;
     top: 80px; left: 0;
@@ -111,21 +115,28 @@ body{
     position: fixed;
     top: 80px;
     left: 350px;
-    width: calc(100% - 350px);
+    width: calc(100% - 349px);
     height: calc(100% - 80px);
     margin: 0; padding: 0;
     padding-left: 50px; padding-right: 50px;
-    padding-bottom: 75px;
+    padding-top: 30px; padding-bottom: 75px;
     overflow-y: scroll;
     hyphens: auto;
     border: none;
 }
 
+.news{
+    margin-bottom: 0;
+}
+
 .news-title{
-    font-size: 50px;
+    font-size: 45px;
+    /* font-family: 'Barlow Medium'; */
+    font-family: 'Prompt Medium';
     margin-bottom: 0px;
-    margin-top: 25px;
-    user-select: text;
+    margin-top: 0;
+    user-select: none;
+    hyphens: auto;
 }
 
 .news-date{
@@ -136,6 +147,18 @@ body{
     margin-bottom: 25px;
     width: 100%;
     padding: 0;
+}
+
+hr{
+    border: none;
+    width: 50%;
+    height: 8px;
+    margin: 0; padding: 0;
+    margin-left: 25%;
+    margin-top: 40px; margin-bottom: 50px;
+    padding-top: 2px; padding-bottom: 2px;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, .3);
 }
 
 .news-tags>a{
@@ -150,12 +173,12 @@ body{
 .news-text{
     text-align: justify;
     font-size: 17.5px;
-    user-select: text;
+    user-select: none;
     line-height: 22px;
 }
 
 .news-text>b{
-    user-select: text;
+    user-select: none;
 }
 
 .tools-bar{
@@ -228,6 +251,7 @@ body{
         position: absolute;
         top: 50px;
         height: calc(100% - 50px);
+        width: calc(100% + 1px);
         overflow-y: auto;
     }
 }
@@ -260,10 +284,18 @@ body{
 
 @media screen and (max-width: 500px){
     .content{
-        padding-left: 20px; padding-right: 20px;
+        padding-left: 20px !important; padding-right: 20px;
     }
     .news-title{
-        font-size: 40px;
+        font-size: 35px;
+        letter-spacing: .5px;
+    }
+    .news-date{
+        font-size: 18px;
+    }
+    .news-text{
+        font-size: 16.5px;
+        line-height: 20px;
     }
     .lateral-bar{
         width: calc(100% + 2px);

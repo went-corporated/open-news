@@ -32,6 +32,6 @@ function toggleNotif(){
     document.getElementById('notif').classList.add('show-notif');
 }
 
-document.getElementById('notif').onclick = function(){
-    window.open('https://github.com/went-lab/selected');
-}
+// document.getElementById('notif').onclick = function(){
+//     window.open('https://github.com/went-lab/selected');
+// }

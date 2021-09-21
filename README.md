@@ -1,2 +1,1 @@
-# animate-div
-Nonsense!
+Open News · Toute l'info

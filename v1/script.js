@@ -35,3 +35,11 @@ function toggleNotif(){
 // document.getElementById('notif').onclick = function(){
 //     window.open('https://github.com/went-lab/selected');
 // }
+
+function launchVideoOnMouseOver(id){
+    document.getElementById(`${id}`).play();
+}
+
+function stopVideoOnMouseOut(id){
+    document.getElementById(`${id}`).pause();
+}

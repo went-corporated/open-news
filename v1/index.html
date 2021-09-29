@@ -41,19 +41,19 @@
             <!-- <div id="tools_bar" class="tools-bar"><button id="toggle_changelog_btn" onclick="changelogToggle();">Changelog</button></div> -->
 
             <div id="lateral_bar" class="lateral-bar">
-                <p id="lateral_bar_title" class="lateral-bar-title">Sneak Peek</p>
+                <p id="lateral_bar_title" class="lateral-bar-title">Spotlight</p>
                 <div id="lateral_bar_list" class="lateral-bar-list">
-                    <div id="lateral_bar_list_item1" class="lateral-bar-list-item">
-                        <p>Très prochainement</p>
-                        <ul>
-                            <li>- rien de prévu -</li>
-                        </ul>
+                    <div class="lateral-bar-list-item" onmouseover="launchVideoOnMouseOver('lateralbarlistitemvideo1');" onmouseout="stopVideoOnMouseOut('lateralbarlistitemvideo1');">
+                        <video loop id="lateralbarlistitemvideo1" src="./2021-09-15 00-21-22.mp4"></video>
+                        <p>La nouvelle vidéo</p>
                     </div>
-                    <div id="lateral_bar_list_item2" class="lateral-bar-list-item">
-                        <p>Dans longtemps</p>
-                        <ul>
-                            <li>- Version mobile à part entière</li>
-                        </ul>
+                    <div class="lateral-bar-list-item" onmouseover="launchVideoOnMouseOver('lateralbarlistitemvideo2');" onmouseout="stopVideoOnMouseOut('lateralbarlistitemvideo2');">
+                        <video loop id="lateralbarlistitemvideo2" src="./2021-09-15 00-21-22.mp4"></video>
+                        <p>La nouvelle vidéo</p>
+                    </div>
+                    <div class="lateral-bar-list-item" onmouseover="launchVideoOnMouseOver('lateralbarlistitemvideo3');" onmouseout="stopVideoOnMouseOut('lateralbarlistitemvideo3');">
+                        <video loop id="lateralbarlistitemvideo3" src="./2021-09-15 00-21-22.mp4"></video>
+                        <p>La nouvelle vidéo</p>
                     </div>
                 </div>
             </div>

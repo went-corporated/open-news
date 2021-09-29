@@ -257,3 +257,30 @@ body{
     hyphens: auto;
     padding-left: 15px; padding-right: 15px;
 }
+
+.bigtext>p{
+    animation: bigtext 100s infinite linear;
+    opacity: .5;
+    overflow: visible !important;
+}
+
+@media screen and (max-width: 1100px){
+    .bigtext>p{
+    font-size: 150px !important;
+    }
+}
+
+@media screen and (max-width: 870px){
+    .bigtext>p{
+    font-size: 100px !important;
+    }
+}
+
+@keyframes bigtext {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}

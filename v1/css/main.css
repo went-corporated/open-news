@@ -374,6 +374,10 @@ hr{
     overflow: visible !important;
 }
 
+.footer-second-ul>li{
+    margin-top: 3px;
+}
+
 .overflow-page{
     margin: 0; padding: 0;
 }
